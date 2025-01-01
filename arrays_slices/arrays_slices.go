@@ -1,6 +1,8 @@
-package arrays_and_slices
+package arrays_slices
 
-import "unicode"
+import (
+    "unicode"
+)
 
 // Sum calculates the sum of a slice of integers.
 func Sum(numbers []int) int {
@@ -22,6 +24,8 @@ func SumDigits(input string) int {
     }
     return sum
 }
+
+
 
 // sum is a helper function to calculate the sum of a slice of integers.
 func sum(numbers []int) int {

@@ -1,8 +1,8 @@
-package arrays_and_slices
+package arrays_slices
 
 import "testing"
 
-func testSum(t *testing.T) {
+func TestSum(t *testing.T) {
 	t.Run("collection of 5 numbers", func(t *testing.T) {
 		numbers := []int{1, 2, 3, 4, 5}
 		got := Sum(numbers)
@@ -16,6 +16,7 @@ func testSum(t *testing.T) {
 		want := 6
 		assertInt(t, got, want)
 	})
+
 }
 
 
