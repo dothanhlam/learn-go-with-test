@@ -4,12 +4,6 @@ import ("testing")
 
 
 func TestSuite(t *testing.T) {
-	t.Run("Perimeter", func(t *testing.T) {
-		got := Perimeter(10.0, 10.0)
-		want := 40.0
-
-		assertEqual(t, got, want)
-	})
 
 	t.Run("Area", func(t *testing.T) {
 		got := Area(12.0, 6.0)
@@ -24,6 +18,15 @@ func TestSuite(t *testing.T) {
 
 		assertEqual(t, got, want)
 	}) 
+
+	t.Run("Rectangle Perimeter", func(t *testing.T) {
+		rectangle := Rectangle{10.0, 10.0}
+		got := Perimeter(rectangle)
+		want := 40.0
+
+		assertEqual(t, got, want)
+	})
+
 }
 
 func assertEqual(t testing.TB, got, want float64) {
