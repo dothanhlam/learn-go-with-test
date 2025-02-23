@@ -2,7 +2,7 @@ package codility
 
 import "testing"
 
-func TestSuite(t *testing.T) {
+func TheWidestPathElementaryTests(t *testing.T) {
 	t.Run("Given X=[1, 8, 7, 3, 4, 1, 8], Y=[6, 4, 1, 8, 5, 1, 7], the function should return 3.", func(t *testing.T) {
 		got := WidestPath([]int{1, 8, 7, 3, 4 ,1, 8}, []int{6, 4, 1, 8, 5, 1, 7})
 		want := 3
@@ -26,11 +26,4 @@ func TestSuite(t *testing.T) {
 		want := 3
 		assertEqual(t, got, want)
 	})
-}
-
-func assertEqual(t testing.TB, got, want int) {
-	t.Helper()
-	if got != want {
-		t.Errorf("expected got %d want %d", got, want)
-	}
 }
