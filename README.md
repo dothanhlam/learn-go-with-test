@@ -1,10 +1,14 @@
 # learn-go-with-test
 
-to create new test suite, run
+This 
+to create new test suite, make new folder with desired name. For example, "banana"
+```bash
+mkdir banana
 ```
-create the folder, for example: mkdir test
-then change into the folder, run
-go mod init test
+Then, change into the folder and init the go module
+```bash
+cd banana
+go mod init banana
 ```
 
 
