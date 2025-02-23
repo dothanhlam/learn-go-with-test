@@ -2,7 +2,7 @@ package codility
 
 import "testing"
 
-func CountBananasTests(t *testing.T) {
+func SpeedMeasurementPointElementaryTests(t *testing.T) {
 	t.Run("speed measurement points", func(t *testing.T) {
 		got := 0
 		want := 0
